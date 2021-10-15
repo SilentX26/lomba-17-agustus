@@ -1,0 +1,596 @@
+<!--
+    ########################################
+    @ Dibuat oleh Muhammad Randika Rosyid
+    @ Kelas XI RPL
+    @ SilentX.
+    ########################################
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Covid-19 - Coronavirus Disease of 2019</title>
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+
+    <!-- Disini Library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <!-- Disini Library -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll">
+    <!-- Loader -->
+    <div class="loader justify-content-center flex-column align-items-center position-fixed w-100">
+        <img src="image/icon.png" alt="Logo Website" height="160px">
+        <div class="loader-text text-white mt-4">
+            LOADING
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navbar Menu -->
+    <div class="navbar navbar-expand-md navbar-primary bg-primary p-3 px-md-4 fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="image/icon.png" alt="Logo Website" height="40px">
+                <h3 class="d-inline m-0 ms-2 fw-bold text-white"><span class="logo-red">COVID</span>-19</h3>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Navbar Menu">
+                <span class="navbar-toggler-icon d-flex flex-column justify-content-between py-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-menu">
+                <ul class="navbar-nav mt-2 mt-md-0">
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link active" href="#section-beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link" href="#pengenalan">Pengenalan</a>
+                    </li>
+                    <li class="nav-item me-md-2">
+                        <a class="nav-link" href="#section-kasus">Data Kasus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#penanganan">Penanganan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar Menu -->
+
+    <!-- Section Beranda -->
+    <section id="section-beranda" class="bg-primary text-white">
+        <div class="row g-0 offset-xl-1 pt-4 pt-md-5 px-4 px-md-5">
+            <div class="col-md-5">
+                <div class="model position-relative">
+                    <img src="image/model-beranda.png" alt="Model Beranda" class="img-model">
+                    <img src="image/coronavirus.png" class="img-virus">
+                    <img src="image/coronavirus.png" class="img-virus">
+                    <img src="image/coronavirus.png" class="img-virus">
+                    <img src="image/coronavirus.png" class="img-virus">
+                </div>
+            </div>
+            <div class="col-md-7 text-center">
+                <h1 class="main-text fw-bold"><span class="logo-red">COVID</span>-19</h1>
+                <p class="mt-4 mb-0 sub-text">Waspada covid-19 mengintaimu dimana saja,</p>
+                <p class="mt-0 sub-text">Yuk kenali lebih dalam tentang covid-19, scroll kebawah ya!</p>
+
+                <div class="scroll-icon mt-4 mt-lg-5">
+                    <i class="bi bi-arrow-down-circle fs-1"></i>
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,218.7C672,203,768,181,864,149.3C960,117,1056,75,1152,80C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- Section Beranda -->
+
+    <!-- Pengenalan -->
+    <div id="pengenalan">
+        <!-- Section Perkenalan -->
+        <section id="section-perkenalan" class="bg-light position-relative overflow-hidden position-relative">
+            <div class="w-75 m-auto d-flex flex-column align-items-center px-2 p-md-4">
+                <div class="head text-center">
+                    <img src="image/coronavirus-lg.png" alt="Coronavirus" class="position-relative">
+                    <h2 class="fw-bold mt-3 text-primary fs-1">Siapakah Covid-19?</h2>
+                </div>
+                <div class="mt-4 px-md-3">
+                    <p>Virus covid-19 atau yang bisa disebut virus corona pertama kali muncul pada akhir Desember 2019, di Wuhan China. 
+                        Tak tanggung-tanggung, pada saat awal kemunculannya covid-19 sudah meng-inveksi 44 orang di kota Wuhan, China.
+                        Dari 44 orang, 11 diantaranya dalam kondisi parah, dan 33 yang lain dalam kondisi stabil.
+                    </p>
+
+                    <p>Covid-19 memiliki gejala yang hampir sama dengan penyakit pneumonia atau yang biasa disebut paru-paru basah, 
+                        diantaranya ialah demam, batuk, sesak nafas, dll. Covid-19 bisa dibilang bukanlah termasuk penyakit yang berbahaya, 
+                        karena kondisi umumnya hanya seperti flu biasa, bahkan ada yang tidak merasakannya sama sekali.
+                    </p>
+
+                    <p>Namun untuk beberapa kasus, covid-19 dapat menjadi sangat berbahaya. Terlebih lagi jika si pendertia memiliki penyakit 
+                        bawaan atau yang biasa disebut penyakit komorbid. Dikarenakan covid-19 dapat memperparah kondisi penyakit bawaan si penderita.
+                    </p>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,128L34.3,138.7C68.6,149,137,171,206,165.3C274.3,160,343,128,411,101.3C480,75,549,53,617,69.3C685.7,85,754,139,823,170.7C891.4,203,960,213,1029,197.3C1097.1,181,1166,139,1234,133.3C1302.9,128,1371,160,1406,176L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section Perkenalan -->
+
+        <!-- Section Gejala -->
+        <section id="section-gejala" class="bg-primary">
+            <div class="px-4">
+                <div class="text-center text-white">
+                    <h2 class="fw-bold fs-1">Gejala Covid-19</h2>
+                    <p class="mt-0">Kenali gejalanya, agar kamu bisa memberikan penaganan terbaik.</p>
+                </div>
+
+                <div class="row g-0 justify-content-center mt-5 pt-2 position-relative">
+                    <div class="col-sm-8 col-md-12 col-lg-10 row justify-content-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card position-relative">
+                                <div class="text-center">
+                                    <img src="image/gejala/demam.png" alt="Gejala Demam">
+                                </div>
+                                <div class="card-body text-center pb-1">
+                                    <h3 class="fs-4">Demam</h3>
+                                    <p>Suhu tubuhmu terlampau panas? waspada, bisa jadi itu adalah gejala covid-19. 
+                                        Jangan takut ke dokter untuk memastikannya ya.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="card position-relative">
+                                <div class="text-center pb-2">
+                                    <img src="image/gejala/batuk-kering.png" alt="Gejala Demam">
+                                </div>
+                                <div class="card-body text-center pb-1">
+                                    <h3 class="fs-4">Batuk Kering</h3>
+                                    <p>Tenggorokan mu tidak enak? terasa gatal dan akhirnya membuatmu batuk-batuk? 
+                                        Jangan dianggap remeh, batuk pun termasuk gejala covid-19.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card position-relative">
+                                <div class="text-center">
+                                    <img src="image/gejala/sakit-kepala.png" alt="Gejala Demam">
+                                </div>
+                                <div class="card-body text-center pb-1">
+                                    <h3 class="fs-4">Sakit Kepala</h3>
+                                    <p>Jika kepala mu terasa pusing secara terus menerus, waspadalah, 
+                                        bukan hanya kemungkinan kamu terkena hipertensi. Sakit kepala juga termasuk gejala covid-19.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,96L34.3,112C68.6,128,137,160,206,165.3C274.3,171,343,149,411,154.7C480,160,549,192,617,192C685.7,192,754,160,823,138.7C891.4,117,960,107,1029,138.7C1097.1,171,1166,245,1234,250.7C1302.9,256,1371,192,1406,160L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section Gejala -->
+    </div>
+
+    <!-- Section Kasus -->
+    <section id="section-kasus" class="bg-light">
+        <div class="px-3 py-3">
+            <div class="text-center">
+                <h2 class="fs-1 fw-bold text-primary">Data Kasus di Indonesia</h2>
+                <p class="mt-0">Berikut adalah data kasus covid-19 di Indonesia per tanggal 14 Agustus.</p>
+            </div>
+
+            <div class="row g-0 justify-content-center mt-5">
+                <div class="col-sm-8 col-md-12 col-lg-8 row justify-content-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body d-flex justify-content-between px-4 position-relative">
+                                <div class="flex-shrink-1">
+                                    <p class="m-0">KASUS POSITIF</p>
+                                    <h4 class="fw-bold fs-4 m-0">3.833.541</h4>
+                                </div>
+                                <i class="bi bi-emoji-frown-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card bg-info text-white">
+                            <div class="card-body d-flex justify-content-between px-4 position-relative">
+                                <div class="flex-shrink-1">
+                                    <p class="m-0">KASUS SEMBUH</p>
+                                    <h4 class="fw-bold fs-4 m-0">3.321.598</h4>
+                                </div>
+                                <i class="bi bi-emoji-smile-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body d-flex justify-content-between px-4 position-relative">
+                                <div class="flex-shrink-1">
+                                    <p class="m-0">KASUS MENINGGAL</p>
+                                    <h4 class="fw-bold fs-4 m-0">116.366</h4>
+                                </div>
+                                <i class="bi bi-emoji-dizzy-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,181.3C384,171,480,117,576,112C672,107,768,149,864,160C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- Section Kasus -->
+
+    <!-- Penanganan -->
+    <div id="penanganan">
+        <!-- Section Penyebaran -->
+        <section id="section-penyebaran" class="bg-primary text-white">
+            <div class="px-3 px-md-4 py-4">
+                <div class="text-center">
+                    <h2 class="fs-1 fw-bold">Covid-19 di Indonesia</h2>
+                    <p class="mt-0">Yuk ketahui bagaimana penyebaran serta penanganan covid-19 di Indonesia.</p>
+                </div>
+
+                <div class="row g-0 justify-content-center mt-5 pt-2 penyebaran-container">
+                    <div class="col-md-11 col-lg-10 row justify-content-center g-0">
+                        <div class="col-md-5 container-img">
+                            <img src="image/penyebaran/awal-kedatangan.jpg" alt="Awal Kedatangan" width="305px" class="rounded">
+                        </div>
+                        <div class="col-md-2 justify-content-center d-none d-md-flex">
+                            <div class="penyebaran-progress bg-light position-relative"></div>
+                            <div class="penyebaran-progress-title bg-warning text-white d-flex justify-content-center align-items-center position-absolute fw-bold">01</div>
+                        </div>
+                        <div class="col-md-5 text-penyebaran">
+                            <h4 class="fw-bold mt-4 text-center">Awal Kedatangan</h4>
+                            <p class="mt-4">Kasus COVID-19 di Indonesia diawali dari sebuah pesta dansa di Klub Paloma & Amigos, Jakarta. Peserta acara tersebut bukan hanya warga negara Indonesia saja, tetapi juga multinasional, termasuk warga Jepang yang menetap di Malaysia. 
+                                Terdapat seorang peserta dari pesta dansa tersebut, sebut saja NT. ia terpapar covid-19 selepas 2 hari dari pesta dansa tersebut.
+                            </p>
+
+                            <p>Tidak berhenti sampai disitu, sebut saja MD, ia terpapar covid-19 setelah berinteraksi dengan anak dari NT yang diduga mengidap covid-19. 
+                                Kejadian ini merupakan awal dari penyebaran covid-19 di Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 justify-content-center mt-0 penyebaran-container">
+                    <div class="col-md-11 col-lg-10 row justify-content-center g-0">
+                        <div class="col-md-5 text-penyebaran">
+                            <h4 class="fw-bold mt-4 text-center">Penanganan Pertama</h4>
+                            <p class="mt-4">Guna mencegah penyebaran covid-19 meluas di Indonesia, gubernur jakarta Anies Baswedan memutuskan untuk menutup tempat wisata 
+                                guna meminimalisir penyebaran covid-19 khusus nya di Jakarta, agar tidak sampai menyebar ke daerah lain.
+                            </p>
+
+                            <p>Meski awal kedatangan nya dari Depok, Jawa Barat. Namun Jakarta lah yang menjadi episentrum atau pusat penyebaran covid-19 saat itu, 
+                                selain karena populasinya yang banyak, Jakarta juga merupakan ibu kota yang tentunya menjadi pusat aktifitas negara.</p>
+
+                            <p>Selain menutup tempat wisata, Anies Baswedan juga memutuskan untuk meliburkan sementara kegiatan belajar mengajar di sekolah, 
+                                menjadi belajar dari rumah. Dan tentunya Anies Baswedan juga mewajibkan kepada warga Jakarta untuk menggunakan masker guna menghindari dari 
+                                virus covid-19.</p>
+                        </div>
+                        <div class="col-md-2 justify-content-center d-none d-md-flex">
+                            <div class="penyebaran-progress bg-light position-relative"></div>
+                            <div class="penyebaran-progress-title bg-info text-white d-flex justify-content-center align-items-center position-absolute fw-bold">02</div>
+                        </div>
+                        <div class="col-md-5 container-img mt-4">
+                            <img src="image/penyebaran/penanganan-pertama.jpg" alt="Penanganan Pertama" width="305px" class="rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 justify-content-center mt-0 penyebaran-container">
+                    <div class="col-md-11 col-lg-10 row justify-content-center g-0">
+                        <div class="col-md-5 container-img mt-4">
+                            <img src="image/penyebaran/vaksinasi.jpg" alt="Vaksinasi Covid-19" width="305px" class="rounded">
+                        </div>
+                        <div class="col-md-2 justify-content-center d-none d-md-flex">
+                            <div class="penyebaran-progress bg-light position-relative"></div>
+                            <div class="penyebaran-progress-title bg-success text-white d-flex justify-content-center align-items-center position-absolute fw-bold">03</div>
+                        </div>
+                        <div class="col-md-5 text-penyebaran">
+                            <h4 class="fw-bold mt-4 text-center">Vaksinasi Covid-19</h4>
+                            <p class="mt-4">Setelah penantian yang cukup lama, akhirnya pada Rabu 13 Januari 2021, presiden Indonesia Jokowi Dodo menjalani vaksinasi untuk yang pertama kalinya di Indonesia.
+                                Momen vaksinasi presiden Jokowi Dodo tersebut juga menjadi tanda diawalnya vaksinasi diseluruh Indonesia.</p>
+
+                            <p>Vaksinasi pertama tersebut menggunakan vaksin dari perusahaan Sinovac Biotech dengan nama vaksin Coronavac. Setelah dinyatakan aman dan halal tentunya oleh BPOM dan MUI.
+                                Dengan dimulainya vaksinasi di Indonesia, diharapkan menekan angka penyebaran covid-19 di Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0 justify-content-center mt-0 penyebaran-container">
+                    <div class="col-md-11 col-lg-10 row justify-content-center g-0">
+                        <div class="col-md-5 text-penyebaran">
+                            <h4 class="fw-bold mt-4 text-center">Varian Delta</h4>
+                            <p class="mt-4">Dimulainya vaksinasi di Indonesia tidak semata-mata memberikan angin segar bagi Indonesia dari penyebaran covid-19, 
+                                baru baru ini telah muncul varian baru dari covid-19, ialah varian delta.</p>
+
+                            <p>Berbeda dari covid-19 yang awal muncul, varian delta memiliki tingkat risiko penyebaran yang lebih tinggi lagi dari covid-19 pada awal kemunculannya. 
+                                Ini tentunya sangat ditakutkan, karena covid-19 saja sudah cukup tinggi risiko penyebaran nya, bagaimana dengan varian delta.</p>
+
+                            <p>Setelah kemunculan varian delta, tak sampai disitu saja. Terdapat kabar terbaru yang mengatakan bahwa telah muncul mutasi baru lagi di India, ialah delta plus. 
+                                Hal ini tentunya memaksa seluruh negara di dunia khususnya Indonesia untuk segera mempercepat penanganan covid-19.</p>
+                        </div>
+                        <div class="col-md-2 justify-content-center d-none d-md-flex">
+                            <div class="penyebaran-progress bg-light position-relative"></div>
+                            <div class="penyebaran-progress-title bg-dark text-white d-flex justify-content-center align-items-center position-absolute fw-bold">04</div>
+                        </div>
+                        <div class="col-md-5 container-img mt-4">
+                            <img src="image/penyebaran/varian-delta.jpg" alt="Varial Delta" width="305px" class="rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,208C384,213,480,139,576,128C672,117,768,171,864,213.3C960,256,1056,288,1152,293.3C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section Penyebaran -->
+
+        <!-- Section Vaksinasi -->
+        <section id="section-vaksinasi" class="bg-light position-relative">
+            <div class="px-4 py-2">
+                <div class="text-center">
+                    <h2 class="fs-1 text-primary fw-bold">Vaksinasi di Indonesia</h2>
+                    <p class="mt-0">Yuk dukung upaya pemerintah dengan tidak takut serta mengikuti vaksinasi covid-19.
+                        <br>Tenang saja, vaksin yang digunakan telah lulus uji BPOM dan MUI kok.</p>
+                </div>
+
+                <div class="row justify-content-center g-0 container-vaksin position-relative">
+                    <div class="col-md-11 col-lg-10 col-xl-8 row">
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3 w-100">
+                                <img src="image/vaksin/sinovac.png" alt="Sinovac" height="30px">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3 w-100">
+                                <img src="image/vaksin/astrazeneca.png" alt="Astrazeneca" height="40px">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3 w-100">
+                                <img src="image/vaksin/sinopharm.png" alt="Sinopharm" height="75px">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3 w-100">
+                                <img src="image/vaksin/moderna.png" alt="Moderna" height="50px">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3">
+                                <img src="image/vaksin/pfizer.png" alt="Pfizer" height="42px">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 mb-4 mb-md-5">
+                            <div class="vaksin-item d-flex bg-light align-items-center rounded justify-content-center p-3">
+                                <img src="image/vaksin/novavax.png" alt="Novavax" height="32px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,149.3C384,117,480,107,576,133.3C672,160,768,224,864,224C960,224,1056,160,1152,138.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section Vaksinasi -->
+
+        <!-- Section PPKM -->
+        <section id="section-ppkm" class="bg-light">
+            <div class="px-4 py-2">
+                <div class="section-header m-auto">
+                    <h2 class="fs-1 fw-bold text-primary text-center">Pemberlakuan PPKM</h2>
+                    <p class="mt-3">PPKM atau Pemberlakuan Pembatasan Kegiatan Masyarakat mulai diberlakukan pada tanggal 11 Januari 2021, 
+                        tujuan diberlakukannya PPKM tentunya untuk membatasi kegiatan masyarakat guna menekan angka penularan covid-19 di Indonesia.</p>
+
+                    <p>Karena bila mobilitas masyarakat masih tinggi tentunya ini akan menghambar langkah penanganan covid-19 di Indonesia. 
+                        Pada peraturan PPKM terdapat 4 level, yuk lihat perbedaan antar level nya dibawah ini:</p>
+                </div>
+
+                <div class="row justify-content-center g-0 container-ppkm">
+                    <div class="col-sm-10 col-lg-8 row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card bg-info text-white">
+                                <h4 class="header bg-primary fw-bold text-center w-50 mb-3">Level 1</h4>
+                                <div class="card-body pt-0 px-4">
+                                    <ol type="I" class="m-0 ps-3">
+                                        <li class="mb-2">Angka kasus konfirmasi positif Covid-19 kurang dari 20 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Kejadian rawat inap di rumah sakit kurang dari lima orang per 100 ribu penduduk.</li>
+                                        <li class="mb-2">Lalu, angka kematian kurang dari satu orang per 100 ribu penduduk di daerah tersebut.</li>
+                                    </ol>               
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="card bg-info text-white">
+                                <h4 class="header bg-warning fw-bold text-center w-50 mb-3">Level 2</h4>
+                                <div class="card-body pt-0 px-4">
+                                    <ol type="I" class="m-0 ps-3">
+                                        <li class="mb-2">Angka kasus konfirmasi positif Covid-19 antara 20 dan kurang dari 50 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Kejadian rawat inap di rumah sakit antara lima dan kurang dari 10 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Angka kematian kurang dari dua orang per 100 ribu penduduk di daerah tersebut.</li>
+                                    </ol>                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="card bg-info text-white">
+                                <h4 class="header bg-danger fw-bold text-center w-50 mb-3">Level 3</h4>
+                                <div class="card-body pt-0 px-4">
+                                    <ol type="I" class="m-0 ps-3">
+                                        <li class="mb-2">Angka kasus konfirmasi positif Covid-19 antara 50-100 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Kejadian rawat inap di rumah sakit 10-30 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Angka kematian akibat Covid-19 antara dua sampai lima orang per 100 ribu penduduk di daerah tersebut.</li>
+                                    </ol>               
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card bg-info text-white">
+                                <h4 class="header bg-dark fw-bold text-center w-50 mb-3">Level 4</h4>
+                                <div class="card-body pt-0 px-4">
+                                    <ol type="I" class="m-0 ps-3">
+                                        <li class="mb-2">Angka kasus konfirmasi positif Covid-19 lebih dari 150 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Kejadian rawat inap di rumah sakit lebih dari 30 orang per 100 ribu penduduk per minggu.</li>
+                                        <li class="mb-2">Serta, angka kematian akibat Covid-19 lebih dari lima orang per 100 ribu penduduk di daerah tersebut.</li>
+                                    </ol>               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,224L48,186.7C96,149,192,75,288,80C384,85,480,171,576,186.7C672,203,768,149,864,128C960,107,1056,117,1152,128C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section PPKM -->
+
+        <!-- Section Jenis Test Covid-19 -->
+        <section id="section-jenis-test" class="bg-primary">
+            <div class="text-center px-4 text-white">
+                <h2 class="fs-1 fw-bold">Test Covid-19 di Indonesia</h2>
+                <p class="mt-0">Yuk ketahui apa-apa saja jenis test yang ada.</p>
+            </div>
+
+            <div class="row g-0 justify-content-center px-4 py-2 mt-5 pt-2">
+                <div class="col-md-12 col-sm-8 col-lg-10 col-xl-9 row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-header fw-bold text-center text-white bg-info py-3">
+                                Tes Cepat Molekuler <br>(TCM)
+                            </div>
+                            <div class="card-body px-4">
+                                <p>Virus SARS-CoV-2 diidentifikasi pada RNA-nya yang menggunakan cartridge khusus. Hasil tes ini terbilang cukup cepat, 
+                                    karena bisa diketahui hasilnya dalam waktu kurang lebih dua jam.</p>
+                                <p>Kamu bisa melakukan pemeriksaan TCM ini di 132 rumah sakit dan beberapa puskesmas yang ditunjuk.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card">
+                            <div class="card-header fw-bold text-center text-white bg-info py-3">
+                                Polymerase Chain Reaction <br>(PCR)
+                            </div>
+                            <div class="card-body px-4">
+                                <p>Jenis pemeriksaan untuk mendeteksi COVID-19 ini akan menggunakan sampel lendir dari hidung atau tenggorokan. Dua lokasi ini dipilih karena menjadi tempat virus akan menggandakan dirinya.</p>
+                                <p>Namun, beberapa sampel seperti sampel cairan dari saluran pernapasan bawah; atau mengambil sampel tinja juga bisa jadi pilihan untuk tes ini.</p>
+                                <p>Virus yang aktif akan memiliki material genetika yang bisa berupa DNA maupun RNA.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header fw-bold text-center text-white bg-info py-3">
+                                Rapid Test
+                            </div>
+                            <div class="card-body px-4">
+                                <p>pemeriksaan rapid test menggunakan sampel darah untuk diuji. Darah digunakan untuk mendeteksi imunoglobulin, yakni antibodi yang terbentuk saat tubuh mengalami infeksi.</p>
+                                <p>Rapid test bisa dilakukan di mana saja dan waktu untuk melakukannya juga singkat, yakni hanya 15-20 menit untuk mendapatkan hasilnya.</p>
+                                <p>Namun, tes ini memiliki kelemahan, karena bisa menghasilkan 'false negative' atau kondisi saat hasil tes tampak negatif meski sebenarnya positif. Biasanya, hal ini terjadi saat tes dilakukan kurang dari 7 hari setelah infeksi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,176C384,149,480,107,576,122.7C672,139,768,213,864,245.3C960,277,1056,267,1152,256C1248,245,1344,235,1392,229.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section Jenis Test Covid-19 -->
+
+        <!-- Section 3M -->
+        <section id="section-3m" class="bg-light">
+            <div class="text-center px-4">
+                <h2 class="fs-1 fw-bold text-primary">Yuk, Terapkan 3M!</h2>
+                <p class="mt-0">Pandemi covid-19 tidak akan selesai jika tidak ditaati oleh semua masyarakat,
+                    <br>Yuk terapkan 3M agar pandemi ini bisa cepat berlalu.</p>
+            </div>
+
+            <div class="row g-0 justify-content-center px-4 py-2 mt-5 pt-2">
+                <div class="col-md-12 col-sm-8 col-lg-10 col-xl-9 row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card position-relative">
+                            <img src="image/3m/memakai-masker.jpg" alt="Memakai Masker" class="card-img-top" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="fw-normal">Memakai Masker</h5>
+                            </div>
+                            <div class="number position-absolute d-flex justify-content-center align-items center bg-primary fw-bold text-white">1</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card">
+                            <img src="image/3m/mencuci-tangan.jpg" alt="Mencuci Tangan" class="card-img-top" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="fw-normal">Mencuci Tangan</h5>
+                            </div>
+                            <div class="number position-absolute d-flex justify-content-center align-items center bg-primary fw-bold text-white">2</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="card">
+                            <img src="image/3m/social-distancing.jpg" alt="Menjaga Jarak" class="card-img-top" height="250px">
+                            <div class="card-body text-center">
+                                <h5 class="fw-normal">Menjaga Jarak</h5>
+                            </div>
+                            <div class="number position-absolute d-flex justify-content-center align-items center bg-primary fw-bold text-white">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,64L120,90.7C240,117,480,171,720,192C960,213,1200,203,1320,197.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+        </section>
+        <!-- Section 3M -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary pb-3 d-flex flex-column justify-content center text-center text-white">
+        <div class="indonesiavscorona">
+            <img src="image/indonesia-lawan-covid.jpg" alt="#INDONESIALAWANCORONA" height="280px" class="rounded">
+            <h4 class="fw-bold fst-italic mt-3 mb-5">#INDONESIALAWANCORONA</h4>
+        </div>
+
+        <small>
+            Dibuat dengan <i class="bi bi-heart-fill text-danger"></i>
+            <br> oleh <a href="https://www.instagram.com/SilentXzx_" target="_blank" class="text-decoration-underline text-white">Muhammad Randika Rosyid</a>.
+        </small>
+    </footer>
+    <!-- Footer -->
+
+    <!-- tombol scroll ke atas -->
+    <a href="#section-beranda" class="scroll-to-top position-fixed text-white text-center">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+    <!-- tombol scroll ke atas -->
+
+    <!-- Disini Library -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-bundle.min.js"></script>
+    <!-- Disini Library -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

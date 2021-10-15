@@ -1,0 +1,495 @@
+/*
+    ########################################
+    @ Dibuat oleh Muhammad Randika Rosyid
+    @ Kelas XI RPL
+    @ SilentX.
+    ########################################
+*/
+
+/* Utils */
+.logo-red { color: #ff8a8a!important; }
+body { color: #575252; }
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: none;
+}
+/* Utils */
+
+/* Loader */
+.loader {
+    height: 100vh;
+    top: 0;
+    z-index: 1050;
+    background-color: #0059dd;
+    display: flex;
+}
+
+.loader .loader-text {
+    font-size: 28px;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+@keyframes anim-loader {
+    50% { opacity: 1; }
+}
+
+.loader .loader-text span {
+    letter-spacing: 0;
+    opacity: 0;
+    animation: anim-loader 2s infinite;
+}
+
+.loader .loader-text span:nth-child(2) { animation-delay: .5s; }
+.loader .loader-text span:nth-child(3) { animation-delay: 1s; }
+/* Loader */
+
+/* Navbar Menu */
+.navbar { box-shadow: 0 1px 10px rgba(116, 116, 116, .7); }
+.navbar .nav-item .nav-link { transition: .4s all; }
+.navbar .nav-item .nav-link:not(.active) { color: #F3F3F3; }
+.navbar .nav-item .nav-link:not(.active):hover { color: white; }
+
+@media (min-width: 768px) {
+    .navbar .nav-item .nav-link.active {
+        padding: .5rem 1rem;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .navbar .nav-item .nav-link.active:hover { box-shadow: 0 0 10px 1px #F7F7F7; }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-item .nav-link.active {
+        color: white;
+        font-weight: bold;
+    }
+
+    .navbar-nav { border-top: 2px solid #EEEEEE; }
+}
+
+.navbar-toggler-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: .4s all;
+}
+
+.navbar-toggler:focus { box-shadow: none; }
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon span:nth-child(2) {
+    opacity: 0;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(13px, 3px);
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, 0px);
+}
+/* Navbar Menu */
+
+/* Section Beranda */
+#section-beranda { margin-top: 5rem; }
+#section-beranda .model { width: fit-content; }
+
+#section-beranda .model .img-model {
+    height: 450px;
+    padding: 3rem;
+}
+
+#section-beranda .model .img-virus {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+@keyframes anim-virus-1 {
+    25% {
+        left: -1.5rem;
+        top: -1rem;
+    }
+    50% { left: 1rem; }
+}
+@keyframes anim-virus-2 {
+    25% { top: -1rem; }
+    50% { top: 1rem; }
+}
+@keyframes anim-virus-3 {
+    25% { left: -1rem; }
+    50% { left: 1rem; }
+}
+@keyframes anim-virus-4 {
+    25% {
+        right: -1rem;
+        bottom: 1rem;
+    }
+    50% {
+        right: 1rem;
+    }
+}
+
+#section-beranda .model .img-virus:nth-child(2) {
+    left: 0;
+    top: 0;
+    animation: anim-virus-1 5s infinite;
+}
+#section-beranda .model .img-virus:nth-child(3) {
+    top: 0;
+    right: 0;
+    animation: anim-virus-2 5s infinite;
+}
+#section-beranda .model .img-virus:nth-child(4) {
+    left: 0;
+    bottom: 0;
+    animation: anim-virus-3 4s infinite;
+}
+#section-beranda .model .img-virus:nth-child(5) {
+    right: 0;
+    bottom: 0;
+    animation: anim-virus-4 4s infinite;
+}
+
+#section-beranda .main-text {
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+#section-beranda .sub-text { font-size: 1.1rem; }
+
+@keyframes anim-scroll-icon {
+    25% { border: 3px solid rgba(223, 223, 223, .8) }
+}
+
+.scroll-icon i::before {
+    border: 3px solid transparent;
+    border-radius: 100%;
+    padding: .1rem;
+    animation: anim-scroll-icon 3s infinite;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #section-beranda .main-text {
+        font-size: 3.5rem;
+        margin-top: 5rem;
+    }
+
+    #section-beranda .model .img-model {
+        height: 410px;
+    }
+}
+
+@media (max-width: 768px) {
+    #section-beranda .col-md-5 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #section-beranda .model .img-model { height: 350px; }
+    #section-beranda .sub-text { font-size: 1rem; }
+
+    #section-beranda .main-text {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 567px) {
+    .scroll-icon i { font-size: 2.1rem!important; }
+}
+/* Section Beranda */
+
+/* Section Perkenalan */
+#section-perkenalan::before, #section-perkenalan::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    left: 0;
+    background-color: rgba(236, 236, 236, .6);
+    z-index: 5;
+    transform: rotate(20deg);
+}
+#section-perkenalan::after {
+    transform: rotate(-20deg);
+    left: unset;
+    right: 0;
+    top: 0;
+}
+
+#section-perkenalan .head img {
+    background-color: rgba(236, 236, 236, .6);
+    padding: .30rem;
+    border-radius: 100%;
+    height: 180px;
+    z-index: 10;
+}
+
+#section-perkenalan p:first-child { text-indent: 1.5rem; }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #section-perkenalan .head img { height: 170px; }
+    #section-perkenalan::before { transform: rotate(30deg); }
+    #section-perkenalan::after { transform: rotate(-30deg); }
+}
+
+@media (max-width: 768px) {
+    #section-perkenalan .head img { height: 150px; }
+    #section-perkenalan::before { transform: rotate(28deg); }
+    #section-perkenalan::after { transform: rotate(-28deg); }
+    #section-perkenalan .w-75 { width: 83%!important; }
+}
+
+@media (max-width: 576px) {
+    #section-perkenalan::before { transform: rotate(38deg); }
+    #section-perkenalan::after { transform: rotate(-38deg); }
+}
+/* Section Perkenalan */
+
+/* Section Gejala */
+#section-gejala .card {
+    box-shadow:  0 0 12px 1.5px rgba(243, 243, 243, .9);
+    transition: .4s all;
+    z-index: 20;
+}
+#section-gejala .card:hover { box-shadow: none; }
+
+#section-gejala .card-body {
+    border-top: 2px dashed #D3D3D3;
+    font-size: .9rem;
+}
+
+#section-gejala .row.position-relative::before, #section-gejala .row.position-relative::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 10px;
+    background-image: url('./../image/bg-dot.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#section-gejala .row.position-relative::after {
+    width: 130px;
+    left: unset;
+    right: 10px;
+    bottom: 0;
+}
+/* Section Gejala */
+
+/* Section Kasus */
+#section-kasus .card-body i { font-size: 2.5rem; }
+
+#section-kasus .card::before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: -35px;
+    border-radius: 100%;
+    background-color: rgba(250, 250, 250, .7);
+    top: -30px;
+    border: 3px solid rgba(250, 250, 250, .6);
+}
+/* Section Kasus */
+
+/* Section Penyebaran */
+#section-penyebaran .penyebaran-progress { 
+    height: 100%;
+    width: 8px; 
+}
+
+#section-penyebaran .penyebaran-progress-title {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 1px #E3DEDD;
+    padding: 1.4rem;
+}
+
+#section-penyebaran .text-penyebaran p:nth-child(2) { text-indent: 1.2rem; }
+#section-penyebaran .penyebaran-container:nth-child(5) .penyebaran-progress {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    #section-penyebaran .penyebaran-container .container-img { text-align: center; }
+    #section-penyebaran .penyebaran-container img { width: 290px; }
+    #section-penyebaran .text-penyebaran { width: 87%!important; }
+
+    #section-penyebaran .penyebaran-container:nth-child(3) .text-penyebaran {
+        order: 2;
+    }
+    #section-penyebaran .penyebaran-container:nth-child(3) .container-img {
+        order: 1;
+    }
+
+    #section-penyebaran .penyebaran-container:nth-child(5) .text-penyebaran {
+        order: 2;
+    }
+    #section-penyebaran .penyebaran-container:nth-child(5) .container-img {
+        order: 1;
+    }
+}
+/* Section Penyebaran */
+
+/* Section Vaksinasi */
+#section-vaksinasi::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: #0d6efd;
+    bottom: 0;
+    z-index: 10;
+}
+
+#section-vaksinasi .container-vaksin { 
+    margin-top: 4rem;
+    z-index: 20; 
+}
+
+#section-vaksinasi .vaksin-item {
+    height: 100px;
+    transition: .6s all;
+    box-shadow: 0 0 8px 2px rgba(205, 199, 199, .8);
+}
+
+#section-vaksinasi .vaksin-item:hover {
+    box-shadow: none;
+    background-color: unset!important;
+}
+
+#section-vaksinasi .wave {
+    position: relative;
+    z-index: 20;
+}
+/* Section Vaksinasi */
+
+/* Section PPKM */
+#section-ppkm .container-ppkm { margin-top: 4rem; }
+
+#section-ppkm .header {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#section-ppkm .card .header { 
+    box-shadow: 0 0 8px .7px rgb(130, 130,130, .5); 
+    font-size: 1.2rem!important;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+}
+
+#section-ppkm .card .card-body li::marker { font-weight: bold; }
+#section-ppkm .section-header p:nth-child(2) { text-indent: 1.2rem; }
+
+@media (min-width: 992px) {
+    #section-ppkm .section-header { width: 60%!important; }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #section-ppkm .section-header { width: 70%!important; }
+}
+@media (min-width: 567px) and (max-width: 768px) {
+    #section-ppkm .section-header { width: 75%!important; }
+}
+@media (max-width: 567px) {
+    #section-ppkm .section-header { width: 87%!important; }
+}
+/* Section PPKM */
+
+/* Section Jenis Test Covid-19 */
+#section-jenis-test .card {
+    box-shadow:  0 0 12px 1.5px rgba(243, 243, 243, .8);
+    transition: .4s all;
+}
+
+#section-jenis-test .card:hover { box-shadow: none; }
+
+#section-jenis-test .card .card-header {
+    border-bottom: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 8px #747474;
+}
+
+#section-jenis-test .card .card-body { font-size: .9rem; }
+#section-jenis-test .card .card-body p:first-child { text-indent: 1rem; }
+/* Section Jenis Test Covid-19 */
+
+/* Section 3M */
+#section-3m .card {
+    box-shadow: 0 0 12px 1px #9B9595;
+    transition: .4s all;
+}
+
+#section-3m .card:hover { box-shadow: 0 0 6px .5px #9B9595; }
+
+#section-3m .card .number {
+    height: 50px;
+    width: 50px;
+    left: -15px;
+    top: -15px;
+    border-radius: 100%;
+    padding-left: 13px;
+    padding-top: 13px;
+    border: 3px solid #ECECEC;
+}
+
+@media (max-width: 992px) {
+    #section-3m .card-img-top { height: 210px; }
+}
+/* Section 3M */
+
+/* Footer */
+@font-face {
+    font-family: 'Patua One';
+    src: url('../font/PatuaOne-Regular.ttf');
+}
+footer .indonesiavscorona { 
+    font-family: 'Patua One';
+    letter-spacing: 1.2px; 
+}
+
+footer .indonesiavscorona img { box-shadow: 0 0 12px 2px #F3F3F3; }
+footer small br { display: none; }
+
+@media (max-width: 768px) {
+    footer .indonesiavscorona img { height: 180px; }
+}
+@media (max-width: 390px) {
+    footer small br { display: block; }
+}
+/* Footer */
+
+/* tombol scroll ke atas */
+.scroll-to-top {
+    height: 50px;
+    width: 50px;
+    right: 40px;
+    bottom: 30px;
+    box-shadow: 0 0 6px .8px #EAE9E9;
+    border-radius: 100%;
+    background-color: #005FEB;
+    font-size: 1.5rem;
+    line-height: 50px;
+    z-index: 999;
+    transition: .4s all;
+    display: none;
+}
+
+.scroll-to-top:hover { box-shadow: none; }
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        right: 35px;
+        bottom: 25px;
+    }
+}
+/* tombol scroll ke atas */
